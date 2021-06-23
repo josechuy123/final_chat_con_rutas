@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/css/chat.css">
+    <link rel="stylesheet" href="../images/">
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/chat--v1.png" type="image/x-icon">
+    <link rel="canonical"href="https://getbootstrap.com/docs/5.0/examples/sign-in/"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+  <p class="bienvenido">Welcome back!, <b id="usernameTag"></b></p>
+
+  <p class="logout"><a id="exit" href="/">Log Out chat</a></p>
+
+    <ul id="messages"></ul>
+
+    <div id="form">
+
+      <div>
+        <input class="input" id="mensaje" type="text" />
+
+        <input type="button" class="button" id="enviarMensaje" value="Send">
+
+      </div>
+
+      <select class="form-select  form-control" id="roomsCambio" name="roomsCambio">
+
+        <option value="null" selected>Choose a room </option>
+
+      </select>
+    
+      
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+
+      <script src="js/chat.js">
+        //  let socket = io()
+      </script>
+
+
+</body>
+</html>
